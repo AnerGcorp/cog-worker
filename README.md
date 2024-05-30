@@ -13,7 +13,7 @@ git clone https://github.com/runpod-workers/cog-worker.git
 
 cd cog-worker/
 
-docker build --tag user/repo:tag --build-arg COG_REPO=user --build-arg COG_MODEL=model_name --build-arg COG_VERSION=model_version .
+docker build --tag anergcorp/seg-aec:v1.0 --build-arg COG_REPO=yyjim --build-arg COG_MODEL=segment-anything-everything --build-arg COG_VERSION=b28e02c3 .
 
-docker push user/repo:tag
+docker push anergcorp/seg-aec:v1.0
 ```
