@@ -31,6 +31,7 @@ def wait_for_service(url):
 
             if status == "READY":
                 time.sleep(1)
+                print("Service ready to receive requests...")
                 return
 
         except requests.exceptions.RequestException:
